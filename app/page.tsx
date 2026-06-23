@@ -130,8 +130,20 @@ export default function Home() {
   <main>
 
      <div className="hero-art-desktop">
-      <img src="/assets/hero-approved.webp" alt="Mercado Querido" />
+      <img src="/assets/hero-mobile-banner.webp" alt="Mercado Querido" />
      </div>
+          <section className="desktop-hero-copy" aria-label="Mercado Querido introduction">
+            <p className="desktop-hero-kicker">HECHO O DISEÑADO EN MÉXICO</p>
+            <h1>Lo auténtico <span>nos conecta.</span></h1>
+            <p className="desktop-hero-body">
+              Un mercado que celebra el talento, la tradición y la creatividad de México.
+            </p>
+            <p className="desktop-hero-date">
+              <em>Próximamente en</em>
+              <strong>Verano 2027</strong>
+            </p>
+          </section>
+
      <div className="hero-art-mobile">
       <img src="/assets/hero-mobile-banner.webp" alt="Mercado Querido" />
      </div>

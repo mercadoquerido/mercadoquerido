@@ -1777,3 +1777,111 @@ p {
     margin: 0 auto !important;
   }
 }
+
+/* Desktop hero split: clean banner + readable copy section */
+.desktop-hero-copy {
+  display: none;
+}
+
+@media (min-width: 641px) {
+  .hero-art,
+  .hero-art-mobile {
+    display: none !important;
+  }
+
+  .hero-art-desktop {
+    display: block !important;
+    width: 100% !important;
+    overflow: hidden !important;
+    background: #061d35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .hero-art-desktop img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+
+  .desktop-hero-copy {
+    display: block !important;
+    background: #061d35 !important;
+    color: #fff7eb !important;
+    text-align: center !important;
+    padding: 44px 24px 54px !important;
+    margin: 0 !important;
+  }
+
+  .desktop-hero-kicker {
+    margin: 0 0 20px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 0.82rem !important;
+    line-height: 1.2 !important;
+    font-weight: 950 !important;
+    letter-spacing: 0.28em !important;
+    color: #fff7eb !important;
+  }
+
+  .desktop-hero-copy h1 {
+    margin: 0 0 20px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: clamp(3.6rem, 6vw, 6.8rem) !important;
+    line-height: 0.92 !important;
+    letter-spacing: -0.055em !important;
+    font-weight: 500 !important;
+    color: #fff7eb !important;
+  }
+
+  .desktop-hero-copy h1 span {
+    color: #c9461e !important;
+    font-weight: 700 !important;
+  }
+
+  .desktop-hero-body {
+    max-width: 720px !important;
+    margin: 0 auto 30px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.16rem !important;
+    line-height: 1.45 !important;
+    font-weight: 500 !important;
+    color: rgba(255, 247, 235, 0.92) !important;
+  }
+
+  .desktop-hero-date {
+    margin: 0 !important;
+    line-height: 1.05 !important;
+  }
+
+  .desktop-hero-date em {
+    display: block !important;
+    margin-bottom: 4px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 1.75rem !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    color: #8da873 !important;
+  }
+
+  .desktop-hero-date strong {
+    display: block !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 3rem !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    color: #fff7eb !important;
+  }
+}
+
+/* Keep mobile using its existing clean setup */
+@media (max-width: 640px) {
+  .desktop-hero-copy {
+    display: none !important;
+  }
+}
