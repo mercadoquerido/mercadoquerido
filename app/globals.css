@@ -626,3 +626,22 @@ p {
     transform-origin: center top !important;
   }
 }
+
+/* Clean mobile fix: vintage tile */
+@media (max-width: 640px) {
+  .category-grid .category-card:nth-child(3) {
+    overflow: hidden !important;
+  }
+
+  .category-grid .category-card:nth-child(3) img {
+    display: block !important;
+    width: calc(100% + 18px) !important;
+    max-width: none !important;
+    margin-left: -6px !important;
+    margin-top: -4px !important;
+    margin-bottom: -8px !important;
+    transform: none !important;
+    object-fit: cover !important;
+    object-position: 56% 50% !important;
+  }
+}
