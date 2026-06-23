@@ -1716,3 +1716,43 @@ p {
     display: block !important;
   }
 }
+
+/* FINAL MOBILE HERO: use new banner asset only */
+@media (max-width: 640px) {
+  .hero-art,
+  .hero-art-desktop {
+    display: none !important;
+  }
+
+  .hero-art-mobile {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: hidden !important;
+    background: #061d35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .hero-art-mobile img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
+}
+
+@media (min-width: 641px) {
+  .hero-art-mobile {
+    display: none !important;
+  }
+
+  .hero-art-desktop {
+    display: block !important;
+  }
+}

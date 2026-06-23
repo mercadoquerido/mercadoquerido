@@ -129,11 +129,9 @@ export default function Home() {
           <div className="hero-art-desktop">
             <img src="/assets/hero-approved.webp" alt="Mercado Querido" />
           </div>
-
-          <div className="hero-art-mobile" aria-label="Mercado Querido">
-            <img src="/assets/hero-approved.webp" alt="Mercado Querido" />
+          <div className="hero-art-mobile">
+            <img src="/assets/hero-mobile-banner.webp" alt="Mercado Querido" />
           </div>
-
 <section className="market-section">
         <div className="section-inner">
           <div className="statement-block">
