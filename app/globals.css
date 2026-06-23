@@ -2071,3 +2071,47 @@ p {
     transform: none !important;
   }
 }
+
+/* FINAL DESKTOP HERO: use true wide banner asset */
+@media (min-width: 641px) {
+  .hero-art,
+  .hero-art-mobile {
+    display: none !important;
+  }
+
+  .hero-art-desktop {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    background: #061d35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .hero-art-desktop img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+}
+
+/* Keep mobile using the existing mobile banner */
+@media (max-width: 640px) {
+  .hero-art-desktop,
+  .desktop-hero-copy {
+    display: none !important;
+  }
+
+  .hero-art-mobile {
+    display: block !important;
+  }
+}

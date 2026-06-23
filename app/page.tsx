@@ -130,7 +130,7 @@ export default function Home() {
   <main>
 
      <div className="hero-art-desktop">
-      <img src="/assets/hero-mobile-banner.webp" alt="Mercado Querido" />
+      <img src="/assets/hero-desktop-wide.webp" alt="Mercado Querido" />
      </div>
 <div className="hero-art-mobile">
       <img src="/assets/hero-mobile-banner.webp" alt="Mercado Querido" />
