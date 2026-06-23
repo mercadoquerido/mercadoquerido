@@ -57,12 +57,14 @@ const categories = [
 function Icon({ type }: { type: string }) {
   if (type === "people") {
     return (
-      <svg viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M23 29c5 0 9-4 9-9s-4-9-9-9-9 4-9 9 4 9 9 9Z" />
-        <path d="M41 31c4 0 7-3 7-7s-3-7-7-7" />
-        <path d="M8 53c2-10 8-16 15-16s13 6 15 16" />
-        <path d="M38 40c7 1 12 6 14 13" />
-        <path d="M32 49s-9-5-9-12c0-3 2-5 5-5 2 0 4 1 4 3 1-2 3-3 5-3 3 0 5 2 5 5 0 7-10 12-10 12Z" className="icon-fill" />
+      <svg viewBox="0 0 100 64" aria-hidden="true">
+        <circle cx="31" cy="17" r="8" />
+        <circle cx="69" cy="17" r="8" />
+        <path d="M17 52c1-14 9-23 22-23" />
+        <path d="M83 52c-1-14-9-23-22-23" />
+        <path d="M39 36c4-7 17-7 22 0" />
+        <path d="M42 43c5 6 12 6 17 0" />
+        <circle cx="50" cy="29" r="3.5" className="icon-fill" />
       </svg>
     );
   }
@@ -78,9 +80,10 @@ function Icon({ type }: { type: string }) {
 
   if (type === "mexico") {
     return (
-      <svg viewBox="0 0 64 64" aria-hidden="true">
-        <path d="M12 23c3-7 9-11 16-12 4-1 8 0 13 3l10 6-3 8 5 4-8 6 3 9-8 5-9-5-7 4-5-8-9-1 2-9-5-5 5-5Z" />
-        <path d="M34 42s-6-4-6-9c0-3 2-5 5-5 1 0 3 1 4 3 1-2 3-3 5-3 3 0 5 2 5 5 0 5-6 9-6 9l-4 3-3-3Z" className="icon-fill" />
+      <svg viewBox="0 0 100 64" aria-hidden="true">
+        <path d="M17 14h9l11 7h18l8 10c2 3 7 0 10 4l5 10 9-3 5 7-8 7-10 2-5-4-7 7-8-5-12-3-11-7-7-13-8-6 4-5-3-8Z" />
+        <path d="M28 20c2 10 7 19 15 29" />
+        <circle cx="58" cy="41" r="3.5" className="icon-fill" />
       </svg>
     );
   }
