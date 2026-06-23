@@ -136,20 +136,7 @@ export default function Home() {
           <p>Un marketplace que celebra el talento, la tradición y la creatividad de México.</p>
         </div>
       </section>
-          <section className="mobile-hero-copy" aria-label="Mercado Querido introduction">
-            <p className="mobile-hero-kicker">HECHO O DISEÑADO EN MÉXICO</p>
-            <h1>Lo auténtico <span>nos conecta.</span></h1>
-            <p className="mobile-hero-body">
-              Un marketplace que celebra el talento, la tradición y la creatividad de México.
-            </p>
-            <p className="mobile-hero-date">
-              <em>Próximamente en</em>
-              <strong>Verano 2027</strong>
-            </p>
-          </section>
-
-
-      <section className="market-section">
+<section className="market-section">
         <div className="section-inner">
           <div className="statement-block">
             <p className="small-caps">Marketplace curado</p>
@@ -170,6 +157,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+          <section className="mobile-hero-copy" aria-label="Mercado Querido introduction">
+            <p className="mobile-hero-kicker">HECHO O DISEÑADO EN MÉXICO</p>
+            <h1>Lo auténtico <span>nos conecta.</span></h1>
+            <p className="mobile-hero-body">
+              Un marketplace que celebra el talento, la tradición y la creatividad de México.
+            </p>
+            <p className="mobile-hero-date">
+              <em>Próximamente en</em>
+              <strong>Verano 2027</strong>
+            </p>
+          </section>
+
+
+      
 
       <section className="discover-section">
         <div className="section-inner">

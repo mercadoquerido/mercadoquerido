@@ -1462,3 +1462,36 @@ p {
     color: #fff7eb !important;
   }
 }
+
+/* Mobile hero: image section only shows logo/artwork, not repeated small poster text */
+@media (max-width: 640px) {
+  .hero-art {
+    height: 315px !important;
+    background: #061d35 !important;
+    overflow: hidden !important;
+  }
+
+  .hero-art img,
+  img.hero-art {
+    width: 124% !important;
+    max-width: none !important;
+    height: 315px !important;
+    object-fit: cover !important;
+    object-position: center 0% !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: block !important;
+  }
+
+  /* Put the readable blue copy below the beige intro, not directly under the hero */
+  .mobile-hero-copy {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    background: #061d35 !important;
+  }
+
+  /* Hide the mobile blue copy if any older duplicate was left inside the hero area */
+  .hero-art + .mobile-hero-copy {
+    display: none !important;
+  }
+}
