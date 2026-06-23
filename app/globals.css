@@ -1756,3 +1756,24 @@ p {
     display: block !important;
   }
 }
+
+/* Desktop hero: prevent bottom ornament from getting clipped */
+@media (min-width: 641px) {
+  .hero-art-desktop {
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    background: #061d35 !important;
+    padding-bottom: 18px !important;
+  }
+
+  .hero-art-desktop img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center top !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
