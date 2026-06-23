@@ -645,3 +645,11 @@ p {
     object-position: 56% 50% !important;
   }
 }
+
+/* Final mobile typography polish */
+@media (max-width: 640px) {
+  .statement-block h2 {
+    font-size: clamp(2.15rem, 10.2vw, 3.05rem) !important;
+    line-height: 0.98 !important;
+  }
+}
