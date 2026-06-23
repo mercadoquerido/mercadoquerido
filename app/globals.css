@@ -943,3 +943,112 @@ p {
 .category-grid .category-card:nth-child(3) .category-text {
   display: none !important;
 }
+
+/* FINAL: make vintage tile match the other coded tiles exactly */
+.category-grid .category-card:nth-child(3) {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  overflow: hidden !important;
+  aspect-ratio: 570 / 528 !important;
+  border-radius: 24px !important;
+  background: #b94117 !important;
+  border: 0 !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-photo {
+  height: 64% !important;
+  overflow: hidden !important;
+  background: #b94117 !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-photo img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  display: block !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  margin: 0 !important;
+  transform: none !important;
+  border-radius: 0 !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-badge {
+  display: grid !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 64% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 3 !important;
+  width: clamp(68px, 8vw, 92px) !important;
+  height: clamp(68px, 8vw, 92px) !important;
+  border-radius: 999px !important;
+  border: 4px solid #fff7eb !important;
+  place-items: center !important;
+  background: #b94117 !important;
+  color: #fff7eb !important;
+  font-size: clamp(2rem, 3vw, 2.7rem) !important;
+  line-height: 1 !important;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.22) !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-text {
+  display: flex !important;
+  position: relative !important;
+  clip: auto !important;
+  width: auto !important;
+  height: 36% !important;
+  overflow: visible !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: clamp(38px, 5vw, 56px) 20px 24px !important;
+  text-align: center !important;
+  background: #b94117 !important;
+  color: #fff7eb !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-text h3 {
+  margin: 0 0 12px !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: clamp(1.55rem, 2.7vw, 2.35rem) !important;
+  line-height: 1.05 !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.02em !important;
+  color: #fff7eb !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-text p {
+  margin: 0 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  color: #fff7eb !important;
+  font-size: clamp(0.82rem, 1.1vw, 1rem) !important;
+  font-weight: 850 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+}
+
+@media (max-width: 640px) {
+  .category-grid .category-card:nth-child(3) {
+    width: min(100%, 390px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .category-grid .category-card:nth-child(3) .category-badge {
+    width: 74px !important;
+    height: 74px !important;
+    border: 4px solid #fff7eb !important;
+    font-size: 2.2rem !important;
+  }
+
+  .category-grid .category-card:nth-child(3) .category-text h3 {
+    font-size: 1.72rem !important;
+  }
+
+  .category-grid .category-card:nth-child(3) .category-text p {
+    font-size: 0.78rem !important;
+    letter-spacing: 0.16em !important;
+  }
+}
