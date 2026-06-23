@@ -1523,3 +1523,43 @@ p {
     display: none !important;
   }
 }
+
+.hero-desktop {
+  display: block !important;
+}
+
+.hero-mobile {
+  display: none !important;
+}
+
+@media (max-width: 640px) {
+  .hero-art {
+    height: auto !important;
+    max-height: none !important;
+    overflow: hidden !important;
+    background: #061d35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hero-desktop {
+    display: none !important;
+  }
+
+  .hero-mobile {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    margin: 0 !important;
+    transform: none !important;
+    border-radius: 0 !important;
+  }
+
+  .mobile-hero-copy {
+    display: none !important;
+  }
+}
