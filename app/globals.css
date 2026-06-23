@@ -722,3 +722,20 @@ p {
     transform-origin: center center !important;
   }
 }
+
+/* Final mobile hero + intro text adjustment */
+@media (max-width: 640px) {
+  .hero-art img {
+    width: 136% !important;
+    max-width: none !important;
+    height: auto !important;
+    margin-left: 47.5% !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .statement-block h2 {
+    font-size: clamp(1.85rem, 8.8vw, 2.65rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.04em !important;
+  }
+}
