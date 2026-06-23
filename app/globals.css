@@ -2115,3 +2115,65 @@ p {
     display: block !important;
   }
 }
+
+/* Desktop category cards: force all three tiles to identical height */
+@media (min-width: 641px) {
+  .category-grid {
+    align-items: stretch !important;
+  }
+
+  .category-card,
+  .category-grid .category-card:nth-child(1),
+  .category-grid .category-card:nth-child(2),
+  .category-grid .category-card:nth-child(3) {
+    height: 260px !important;
+    min-height: 260px !important;
+    max-height: 260px !important;
+    aspect-ratio: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
+
+  .category-photo,
+  .category-grid .category-card:nth-child(1) .category-photo,
+  .category-grid .category-card:nth-child(2) .category-photo,
+  .category-grid .category-card:nth-child(3) .category-photo {
+    height: 58% !important;
+    min-height: 58% !important;
+    max-height: 58% !important;
+    flex: 0 0 58% !important;
+    overflow: hidden !important;
+  }
+
+  .category-photo img,
+  .category-grid .category-card:nth-child(1) .category-photo img,
+  .category-grid .category-card:nth-child(2) .category-photo img,
+  .category-grid .category-card:nth-child(3) .category-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block !important;
+  }
+
+  .category-text,
+  .category-grid .category-card:nth-child(1) .category-text,
+  .category-grid .category-card:nth-child(2) .category-text,
+  .category-grid .category-card:nth-child(3) .category-text {
+    height: 42% !important;
+    min-height: 42% !important;
+    max-height: 42% !important;
+    flex: 0 0 42% !important;
+    padding: 36px 16px 16px !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .category-badge,
+  .category-grid .category-card:nth-child(1) .category-badge,
+  .category-grid .category-card:nth-child(2) .category-badge,
+  .category-grid .category-card:nth-child(3) .category-badge {
+    top: 58% !important;
+  }
+}
