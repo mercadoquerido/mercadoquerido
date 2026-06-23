@@ -514,7 +514,11 @@ p {
   }
 
   .statement-block h2 {
-    font-size: clamp(2rem, 14vw, 3.35rem);
+    font-size: clamp(1.85rem, 9.5vw, 2.65rem);
+    line-height: 1.02;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .discover-heading {
@@ -522,7 +526,24 @@ p {
   }
 
   .discover-heading h2 {
-    font-size: clamp(2rem, 11vw, 3rem);
+    font-size: clamp(1.85rem, 9vw, 2.55rem);
+  }
+
+  .category-grid {
+    gap: 22px;
+  }
+
+  .category-card {
+    width: min(100%, 390px);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 22px;
+  }
+
+  .category-card img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .waitlist-section {
