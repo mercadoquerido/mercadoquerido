@@ -653,3 +653,64 @@ p {
     line-height: 0.98 !important;
   }
 }
+
+/* Final mobile typography and vintage asset reset */
+@media (max-width: 640px) {
+  .statement-block h2 {
+    font-size: clamp(2rem, 9.4vw, 2.85rem) !important;
+    line-height: 1 !important;
+  }
+
+  .category-grid .category-card:nth-child(3) img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    object-fit: initial !important;
+    object-position: center center !important;
+  }
+}
+
+/* Final mobile typography + centered vintage tile asset */
+@media (max-width: 640px) {
+  .statement-block h2 {
+    font-size: clamp(2rem, 9.4vw, 2.85rem) !important;
+    line-height: 1 !important;
+  }
+
+  .category-grid .category-card:nth-child(3) img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    object-fit: initial !important;
+    object-position: center center !important;
+  }
+}
+
+/* Final mobile polish: smaller intro + centered vintage tile */
+@media (max-width: 640px) {
+  .statement-block h2 {
+    font-size: clamp(2rem, 9.4vw, 2.85rem) !important;
+    line-height: 1 !important;
+  }
+
+  .category-grid .category-card:nth-child(3) {
+    overflow: hidden !important;
+  }
+
+  .category-grid .category-card:nth-child(3) img {
+    width: 108% !important;
+    max-width: none !important;
+    height: auto !important;
+    margin-left: -4% !important;
+    margin-top: -4px !important;
+    margin-bottom: -8px !important;
+    transform: translateX(4%) !important;
+    transform-origin: center top !important;
+    object-fit: initial !important;
+    object-position: center center !important;
+  }
+}
