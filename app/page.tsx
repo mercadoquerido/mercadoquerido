@@ -125,23 +125,15 @@ export default function Home() {
 
   return (
     <main>
-      <section className="hero-art" aria-label="Mercado Querido">
-        <img
-          className="hero-desktop"
-          src="/assets/hero-approved-padded.webp"
-          alt="Mercado Querido. Hecho o diseñado en México. Próximamente en Verano 2027."
-        />
-        <img
-          className="hero-mobile"
-          src="/assets/hero-mobile-banner.png"
-          alt="Mercado Querido. Hecho o diseñado en México."
-        />
-        <div className="seo-copy">
-          <h1>Mercado Querido</h1>
-          <p>Próximamente en verano de 2027.</p>
-          <p>Un marketplace que celebra el talento, la tradición y la creatividad de México.</p>
-        </div>
-      </section>
+
+          <div className="hero-art-desktop">
+            <img src="/assets/hero-approved.webp" alt="Mercado Querido" />
+          </div>
+
+          <div className="hero-art-mobile" aria-label="Mercado Querido">
+            <img src="/assets/hero-approved.webp" alt="Mercado Querido" />
+          </div>
+
 <section className="market-section">
         <div className="section-inner">
           <div className="statement-block">
@@ -163,6 +155,19 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+          <section className="mobile-hero-copy" aria-label="Mercado Querido introduction">
+            <p className="mobile-hero-kicker">HECHO O DISEÑADO EN MÉXICO</p>
+            <h1>Lo auténtico <span>nos conecta.</span></h1>
+            <p className="mobile-hero-body">
+              Un marketplace que celebra el talento, la tradición y la creatividad de México.
+            </p>
+            <p className="mobile-hero-date">
+              <em>Próximamente en</em>
+              <strong>Verano 2027</strong>
+            </p>
+          </section>
+
 <section className="discover-section">
         <div className="section-inner">
           <div className="discover-heading">
