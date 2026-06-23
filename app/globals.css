@@ -1366,3 +1366,99 @@ p {
     color: #fff7eb !important;
   }
 }
+
+/* TRUE mobile hero split: image section + readable copy section */
+.mobile-hero-copy {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .hero-art {
+    background: #061d35 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hero-art img,
+  img.hero-art {
+    width: 112% !important;
+    max-width: none !important;
+    height: 315px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: block !important;
+  }
+
+  .mobile-hero-copy {
+    display: block !important;
+    background: #061d35 !important;
+    color: #fff7eb !important;
+    text-align: center !important;
+    padding: 30px 22px 38px !important;
+    margin: 0 !important;
+  }
+
+  .mobile-hero-kicker {
+    margin: 0 0 18px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 0.74rem !important;
+    line-height: 1.2 !important;
+    font-weight: 950 !important;
+    letter-spacing: 0.24em !important;
+    color: #fff7eb !important;
+  }
+
+  .mobile-hero-copy h1 {
+    margin: 0 0 18px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: clamp(2.55rem, 11.5vw, 3.8rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.045em !important;
+    font-weight: 500 !important;
+    color: #fff7eb !important;
+  }
+
+  .mobile-hero-copy h1 span {
+    display: block !important;
+    color: #c9461e !important;
+    font-weight: 700 !important;
+  }
+
+  .mobile-hero-body {
+    max-width: 335px !important;
+    margin: 0 auto 24px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.02rem !important;
+    line-height: 1.36 !important;
+    font-weight: 500 !important;
+    color: rgba(255, 247, 235, 0.92) !important;
+  }
+
+  .mobile-hero-date {
+    margin: 0 !important;
+    line-height: 1.05 !important;
+  }
+
+  .mobile-hero-date em {
+    display: block !important;
+    margin-bottom: 4px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 1.45rem !important;
+    font-style: italic !important;
+    font-weight: 500 !important;
+    color: #8da873 !important;
+  }
+
+  .mobile-hero-date strong {
+    display: block !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 2.35rem !important;
+    line-height: 1 !important;
+    font-weight: 500 !important;
+    color: #fff7eb !important;
+  }
+}
