@@ -107,7 +107,7 @@ export default function Home() {
     const email = String(formData.get("email") || "").trim();
 
     try {
-      await fetch(process.env.NEXT_PUBLIC_WAITLIST_URL as string, {
+      await fetch((process.env.NEXT_PUBLIC_WAITLIST_URL || "https://script.google.com/macros/s/AKfycbzEdzXS7mosjRnEnG63wD5n4KS1dkHeDfmLwosD2ePZQG_fxAOKunAQ_iIzyADpnPUpJw/exec") as string, {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },
