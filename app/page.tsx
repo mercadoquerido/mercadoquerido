@@ -50,7 +50,7 @@ const categories = [
     src: "/assets/card-vintage-final.png",
     alt: "Cámara, cartel de cine mexicano y piezas vintage",
     tone: "terracotta",
-    symbol: "▵",
+    symbol: "✺",
   },
 ];
 
