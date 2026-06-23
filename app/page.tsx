@@ -47,7 +47,7 @@ const categories = [
   {
     title: "Artículos vintage",
     subtitle: "Tesoros con historia",
-    src: "/assets/card-vintage.png",
+    src: "/assets/card-vintage-final.png",
     alt: "Cámara, cartel de cine mexicano y piezas vintage",
     tone: "terracotta",
     symbol: "✽",
