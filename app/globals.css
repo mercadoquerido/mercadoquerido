@@ -1113,3 +1113,161 @@ p {
     -webkit-text-stroke: 0.4px #fff7eb !important;
   }
 }
+
+/* Mobile hero split: artwork first, readable text second */
+.mobile-hero-copy {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .hero-art {
+    background: #061d35 !important;
+    border-radius: 0 !important;
+    overflow: hidden !important;
+    margin-bottom: 0 !important;
+  }
+
+  .hero-art img {
+    width: 150% !important;
+    max-width: none !important;
+    height: 360px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: block !important;
+  }
+
+  .mobile-hero-copy {
+    display: block !important;
+    background: #061d35 !important;
+    color: #fff7eb !important;
+    text-align: center !important;
+    padding: 26px 22px 34px !important;
+    margin: 0 !important;
+  }
+
+  .mobile-hero-kicker {
+    margin: 0 0 18px !important;
+    color: #fff7eb !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 0.72rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.24em !important;
+  }
+
+  .mobile-hero-copy h1 {
+    margin: 0 0 16px !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: clamp(2.55rem, 12vw, 4rem) !important;
+    line-height: 0.94 !important;
+    letter-spacing: -0.045em !important;
+    font-weight: 500 !important;
+    color: #fff7eb !important;
+  }
+
+  .mobile-hero-copy h1 span {
+    display: block !important;
+    color: #c9461e !important;
+    font-weight: 700 !important;
+  }
+
+  .mobile-hero-body {
+    max-width: 330px !important;
+    margin: 0 auto 22px !important;
+    color: rgba(255, 247, 235, 0.92) !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 1.02rem !important;
+    line-height: 1.35 !important;
+    font-weight: 500 !important;
+  }
+
+  .mobile-hero-date {
+    margin: 0 !important;
+    color: #fff7eb !important;
+    line-height: 1.05 !important;
+  }
+
+  .mobile-hero-date em {
+    display: block !important;
+    margin-bottom: 4px !important;
+    color: #8ba36f !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 1.45rem !important;
+    font-style: italic !important;
+  }
+
+  .mobile-hero-date strong {
+    display: block !important;
+    color: #fff7eb !important;
+    font-family: Georgia, "Times New Roman", serif !important;
+    font-size: 2.35rem !important;
+    font-weight: 500 !important;
+  }
+}
+
+/* Desktop tile fix: stop card titles/subtitles from clipping */
+@media (min-width: 641px) {
+  .category-card {
+    aspect-ratio: 570 / 545 !important;
+  }
+
+  .category-photo,
+  .category-grid .category-card:nth-child(3) .category-photo {
+    height: 61% !important;
+  }
+
+  .category-badge,
+  .category-grid .category-card:nth-child(3) .category-badge {
+    top: 61% !important;
+    width: 82px !important;
+    height: 82px !important;
+    border-width: 4px !important;
+    font-size: 2.15rem !important;
+  }
+
+  .category-text,
+  .category-grid .category-card:nth-child(3) .category-text {
+    height: 39% !important;
+    padding: 44px 18px 22px !important;
+  }
+
+  .category-text h3,
+  .category-grid .category-card:nth-child(3) .category-text h3 {
+    font-size: clamp(1.55rem, 2.05vw, 2.15rem) !important;
+    line-height: 1.02 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .category-text p,
+  .category-grid .category-card:nth-child(3) .category-text p {
+    font-size: clamp(0.72rem, 0.82vw, 0.9rem) !important;
+    line-height: 1.1 !important;
+    font-weight: 950 !important;
+    letter-spacing: 0.18em !important;
+    padding-bottom: 2px !important;
+  }
+}
+
+/* Keep mobile tiles consistent after desktop tile changes */
+@media (max-width: 640px) {
+  .category-card,
+  .category-grid .category-card:nth-child(3) {
+    aspect-ratio: 570 / 528 !important;
+  }
+
+  .category-photo,
+  .category-grid .category-card:nth-child(3) .category-photo {
+    height: 64% !important;
+  }
+
+  .category-badge,
+  .category-grid .category-card:nth-child(3) .category-badge {
+    top: 64% !important;
+  }
+
+  .category-text,
+  .category-grid .category-card:nth-child(3) .category-text {
+    height: 36% !important;
+  }
+}
