@@ -2216,3 +2216,10 @@ p {
     transform-origin: center top !important;
   }
 }
+
+/* Fine-tune tile 1 photo crop */
+.category-grid .category-card:nth-child(1) .category-photo img {
+  object-position: center 8% !important;
+  transform: scale(1.16) !important;
+  transform-origin: center top !important;
+}
