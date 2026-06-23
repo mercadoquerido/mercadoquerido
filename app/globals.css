@@ -2177,3 +2177,42 @@ p {
     top: 58% !important;
   }
 }
+
+/* Fix double icons: crop category images to photo area only */
+.category-photo img,
+.category-grid .category-card:nth-child(1) .category-photo img,
+.category-grid .category-card:nth-child(2) .category-photo img,
+.category-grid .category-card:nth-child(3) .category-photo img {
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+/* Desktop: keep baked-in lower icon area out of the image crop */
+@media (min-width: 641px) {
+  .category-photo img,
+  .category-grid .category-card:nth-child(1) .category-photo img,
+  .category-grid .category-card:nth-child(2) .category-photo img,
+  .category-grid .category-card:nth-child(3) .category-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    transform: scale(1.08) !important;
+    transform-origin: center top !important;
+  }
+}
+
+/* Mobile: same fix without changing card size */
+@media (max-width: 640px) {
+  .category-photo img,
+  .category-grid .category-card:nth-child(1) .category-photo img,
+  .category-grid .category-card:nth-child(2) .category-photo img,
+  .category-grid .category-card:nth-child(3) .category-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    transform: scale(1.08) !important;
+    transform-origin: center top !important;
+  }
+}
