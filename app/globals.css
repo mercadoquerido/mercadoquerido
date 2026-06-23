@@ -1959,3 +1959,32 @@ p {
     margin: 0 !important;
   }
 }
+
+/* Desktop hero correction: show full banner without aggressive crop */
+@media (min-width: 641px) {
+  .hero-art-desktop {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: clamp(520px, 54vw, 760px) !important;
+    max-height: 760px !important;
+    overflow: hidden !important;
+    background: #061d35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .hero-art-desktop img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    object-position: center top !important;
+    margin: 0 auto !important;
+    transform: none !important;
+  }
+}
