@@ -918,3 +918,28 @@ p {
   object-fit: cover !important;
   object-position: center center !important;
 }
+
+/* Final tile 3: use the baked image only, no duplicate overlay */
+.category-grid .category-card:nth-child(3) {
+  aspect-ratio: 570 / 528 !important;
+  background: transparent !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-photo {
+  height: 100% !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-photo img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-badge,
+.category-grid .category-card:nth-child(3) .category-text {
+  display: none !important;
+}
