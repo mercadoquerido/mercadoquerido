@@ -33,18 +33,24 @@ const categories = [
     subtitle: "Hechos con pasión",
     src: "/assets/card-artesania.webp",
     alt: "Cerámica artesanal mexicana estilo Talavera",
+    tone: "navy",
+    symbol: "✽",
   },
   {
     title: "Alimentos regionales",
     subtitle: "Sabores de nuestro país",
     src: "/assets/card-alimentos.webp",
     alt: "Alimentos regionales mexicanos en frascos artesanales",
+    tone: "green",
+    symbol: "▵",
   },
   {
     title: "Artículos vintage",
     subtitle: "Tesoros con historia",
     src: "/assets/card-vintage.webp",
     alt: "Cámara, cartel de cine mexicano y piezas vintage",
+    tone: "terracotta",
+    symbol: "✽",
   },
 ];
 
@@ -163,8 +169,15 @@ export default function Home() {
 
           <div className="category-grid">
             {categories.map((category) => (
-              <article className="category-card" key={category.title}>
-                <img src={category.src} alt={category.alt} />
+              <article className={`category-card category-card--${category.tone}`} key={category.title}>
+                <div className="category-photo">
+                  <img src={category.src} alt={category.alt} />
+                </div>
+
+                <div className="category-badge" aria-hidden="true">
+                  {category.symbol}
+                </div>
+
                 <div className="category-text">
                   <h3>{category.title}</h3>
                   <p>{category.subtitle}</p>
