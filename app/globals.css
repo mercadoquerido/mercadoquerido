@@ -565,3 +565,14 @@ p {
     text-align: center;
   }
 }
+
+/* Final mobile/asset correction: vintage tile */
+.category-card:nth-child(3) img {
+  transform: scale(1.035) translate(1.4%, -4px);
+  transform-origin: center top;
+}
+
+/* Keep the card mask clean while the image is slightly enlarged */
+.category-card {
+  overflow: hidden;
+}
