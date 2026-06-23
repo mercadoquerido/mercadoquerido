@@ -2017,3 +2017,30 @@ p {
     transform: none !important;
   }
 }
+
+/* DESKTOP HERO FINAL: full-width banner, controlled height */
+@media (min-width: 641px) {
+  .hero-art-desktop {
+    display: block !important;
+    width: 100vw !important;
+    height: clamp(420px, 42vw, 560px) !important;
+    max-height: 560px !important;
+    overflow: hidden !important;
+    background: #061d35 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .hero-art-desktop img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center 38% !important;
+    margin: 0 !important;
+    transform: none !important;
+  }
+}
