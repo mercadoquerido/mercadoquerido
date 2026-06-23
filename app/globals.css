@@ -614,3 +614,15 @@ p {
     transform-origin: center top !important;
   }
 }
+
+/* Final mobile correction: vintage tile only */
+@media (max-width: 640px) {
+  .category-grid .category-card:nth-child(3) img {
+    width: 104% !important;
+    max-width: none !important;
+    height: auto !important;
+    margin-left: 50% !important;
+    transform: translateX(-47%) translateY(-6px) !important;
+    transform-origin: center top !important;
+  }
+}
