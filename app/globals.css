@@ -1495,3 +1495,31 @@ p {
     display: none !important;
   }
 }
+
+/* Hard crop mobile hero so section 1 is image/logo only */
+@media (max-width: 640px) {
+  .hero-art {
+    height: 245px !important;
+    max-height: 245px !important;
+    overflow: hidden !important;
+    background: #061d35 !important;
+  }
+
+  .hero-art img,
+  img.hero-art {
+    width: 118% !important;
+    max-width: none !important;
+    height: auto !important;
+    min-height: 245px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: block !important;
+  }
+
+  /* Keep the separate readable text section away from the hero */
+  .hero-art + .mobile-hero-copy {
+    display: none !important;
+  }
+}
