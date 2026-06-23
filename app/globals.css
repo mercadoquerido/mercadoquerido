@@ -902,3 +902,19 @@ p {
 .category-grid .category-card:nth-child(3) .category-text {
   display: none !important;
 }
+
+/* Match vintage tile height to the other product tiles */
+.category-grid .category-card:nth-child(3) {
+  aspect-ratio: 570 / 528 !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-photo {
+  height: 100% !important;
+}
+
+.category-grid .category-card:nth-child(3) .category-photo img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+}
