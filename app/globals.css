@@ -1563,3 +1563,26 @@ p {
     display: none !important;
   }
 }
+
+/* Final mobile hero banner sizing: show QUERIDO fully */
+@media (max-width: 640px) {
+  .hero-art {
+    height: 255px !important;
+    max-height: 255px !important;
+    overflow: hidden !important;
+    background: #061d35 !important;
+  }
+
+  .hero-art img,
+  img.hero-art {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 255px !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    margin-left: 0 !important;
+    transform: none !important;
+    display: block !important;
+  }
+}
