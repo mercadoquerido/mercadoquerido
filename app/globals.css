@@ -1077,3 +1077,39 @@ p {
     letter-spacing: 0.16em !important;
   }
 }
+
+/* Force all category subtitles to match visually */
+.category-card .category-text p,
+.category-grid .category-card:nth-child(1) .category-text p,
+.category-grid .category-card:nth-child(2) .category-text p,
+.category-grid .category-card:nth-child(3) .category-text p {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(0.82rem, 1.1vw, 1rem) !important;
+  font-weight: 950 !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: #fff7eb !important;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: geometricPrecision !important;
+}
+
+/* Tile 3 needs extra visual weight because the orange background makes it look lighter */
+.category-grid .category-card:nth-child(3) .category-text p {
+  -webkit-text-stroke: 0.35px #fff7eb !important;
+  text-shadow: 0 0 0 #fff7eb !important;
+}
+
+@media (max-width: 640px) {
+  .category-card .category-text p,
+  .category-grid .category-card:nth-child(1) .category-text p,
+  .category-grid .category-card:nth-child(2) .category-text p,
+  .category-grid .category-card:nth-child(3) .category-text p {
+    font-size: 0.78rem !important;
+    font-weight: 950 !important;
+    letter-spacing: 0.16em !important;
+  }
+
+  .category-grid .category-card:nth-child(3) .category-text p {
+    -webkit-text-stroke: 0.4px #fff7eb !important;
+  }
+}
