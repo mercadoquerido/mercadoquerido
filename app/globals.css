@@ -2223,3 +2223,10 @@ p {
   transform: scale(1.16) !important;
   transform-origin: center top !important;
 }
+
+/* Mobile hero readability: brighten logo/banner image */
+@media (max-width: 640px) {
+  .hero-art-mobile img {
+    filter: brightness(1.20) contrast(1.06) saturate(1.06) !important;
+  }
+}
