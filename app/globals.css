@@ -2230,3 +2230,9 @@ p {
     filter: brightness(1.20) contrast(1.06) saturate(1.06) !important;
   }
 }
+
+/* Stronger hero readability adjustment */
+.hero-art-desktop img,
+.hero-art-mobile img {
+  filter: brightness(1.28) contrast(1.08) saturate(1.08) !important;
+}
